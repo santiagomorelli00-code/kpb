@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"id=\\\\\"kosten\\\\\"\\\\|</div>$\" /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(awk '/id=\"kanzlei\"/,/^<\\\\/div><!-- end #kanzlei|^<!-- =+ KANZLEI|^<div id=\"[a-z]/' /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(awk -F: '$1>1660 && $1<1810 {print}')",
+      "Bash(sed -i '' 's|assets/RA-Noah-Kappus-1-791-2-1500x1500\\\\.jpg|assets/noah-photo.jpg|g' /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(sed -i '' 's|assets/anw5\\\\.webp|assets/noah-photo.jpg|g' /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(sed -i '' 's|assets/anw7\\\\.jpg|assets/andreas-photo.jpg|g' /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(sed -i '' 's|assets/anw6\\\\.jpg|assets/larissa-photo.jpg|g' /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(awk 'NR>=3279 && NR<=3460' /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(awk 'NR>=3282 && NR<=3340 && /img src/' /Users/santiagomorelli/Desktop/kappus/index.html)",
+      "Bash(awk 'NR>=3282 && NR<=3340{if\\(/img src/\\) print NR\": found img\"}' /Users/santiagomorelli/Desktop/kappus/index.html)"
+    ]
+  }
+}
